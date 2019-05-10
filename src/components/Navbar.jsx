@@ -29,6 +29,10 @@ class Navbar extends Component {
 
 const NavWrapper = styled.nav`
 background: var(--mainNav);
+ul {
+  text-decoration: none;
+  list-style-type: none !important;
+};
 .nav-link {
   color: var(--mainWhite) !important;
   font-size: 1.3rem;
