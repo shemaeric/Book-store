@@ -14,9 +14,8 @@ class BookList extends Component {
               <div className="row">
                 <BookConsumer>
                   {value => {
-                    console.log(value);
                     return value.books.map(book => {
-                      return <Book key="book.id" book={book} />;
+                    return <Book key={Math.random()} book={book} />;
                     });
                   }}
                 </BookConsumer>
@@ -24,7 +23,6 @@ class BookList extends Component {
             </div>
           </div>
         </React.Fragment>
-        {/* <Book /> */}
       </div>
     );
   }
