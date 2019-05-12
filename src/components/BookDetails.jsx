@@ -4,16 +4,6 @@ import { Link } from "react-router-dom";
 import ButtonContainer from "./Button";
 
 class BookDetails extends Component {
-  // constructor(){
-  //     super();
-  //    this.state={
-
-  //    }
-  // }
-  // componentDidMount(){
-  //     const {match:{params}}=this.props;
-  //     console.log(params.handle);
-  // }
   render() {
     return (
       <BookConsumer>
@@ -67,6 +57,7 @@ class BookDetails extends Component {
                     disabled= {inCart?true:false}
                     onClick = {() => {
                       value.addToCart(id);
+                      value.openModel(id);
                     }}
                     >
                       {inCart? "inCart": "add to cart"}
