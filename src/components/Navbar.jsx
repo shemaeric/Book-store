@@ -7,7 +7,7 @@ import styled from 'styled-components';
 class Navbar extends Component {
   render() {
     return <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5"> 
-      <Link to="/details">
+      <Link to="/">
         <img src={logo} alt="store" className="nav-logo"/>
       </Link> 
       <ul className="nav-bar align-items-center">
