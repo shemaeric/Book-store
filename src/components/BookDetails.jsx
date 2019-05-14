@@ -57,7 +57,7 @@ class BookDetails extends Component {
                     disabled= {inCart?true:false}
                     onClick = {() => {
                       value.addToCart(id);
-                      value.openModel(id);
+                      value.openModal(id);
                     }}
                     >
                       {inCart? "inCart": "add to cart"}
